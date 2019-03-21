@@ -1,0 +1,207 @@
+{
+    "genome_paths": {
+        "Ref_GRCh38": "/mnt/storage/SAYRES/XY_Trim_Ref/references/gencode.GRCh38.p7_wholeGenome/GRCh38_wholeGenome_reference.fa",
+        "Ref_GRCh38_Y_HardMasked": "/mnt/storage/SAYRES/XY_Trim_Ref/references/gencode.GRCh38.p7_Ymasked/GRCh38_Ymasked_reference.fa",
+        "Ref_GRCh38_Y_PARsMasked": "/mnt/storage/SAYRES/XY_Trim_Ref/references/gencode.GRCh38.p7_minusYPARs/GRCh38_minusYPARs_reference.fa"
+    },
+
+    "sample_names" : [
+      "OBG0044", "OBG0068", "OBG0111", "OBG0112", "OBG0115", "OBG0116", "OBG0117",
+      "OBG0118", "OBG0120", "OBG0122", "OBG0123", "OBG0126", "OBG0130", "OBG0132",
+      "OBG0133", "OBG0156", "OBG0158", "OBG0170", "OBG0174", "OBG0175", "OBG0178",
+      "YPOPS0006", "OBG0166", "OBG0053"
+    ],
+
+    "OBG0044":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0044/Unaligned/",
+      "fq1": "OBG0044_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0044_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0044_R1.fastq.gz",
+      "fq2_sy": "OBG0044_R2.fastq.gz"
+    },
+
+    "OBG0068":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0068/Unaligned/",
+      "fq1": "OBG0068_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0068_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0068_R1.fastq.gz",
+      "fq2_sy": "OBG0068_R2.fastq.gz"
+    },
+
+    "OBG0111":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0111/Unaligned/",
+      "fq1": "OBG0111_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0111_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0111_R1.fastq.gz",
+      "fq2_sy": "OBG0111_R2.fastq.gz"
+    },
+
+    "OBG0112":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0112/Unaligned/",
+      "fq1": "OBG0112_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0112_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0112_R1.fastq.gz",
+      "fq2_sy": "OBG0112_R2.fastq.gz"
+    },
+
+    "OBG0115":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0115/Unaligned/",
+      "fq1": "OBG0115_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0115_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0115_R1.fastq.gz",
+      "fq2_sy": "OBG0115_R2.fastq.gz"
+    },
+
+    "OBG0116":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0116/Unaligned/",
+      "fq1": "OBG0116_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0116_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0116_R1.fastq.gz",
+      "fq2_sy": "OBG0116_R2.fastq.gz"
+    },
+
+    "OBG0117":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0117/Unaligned/",
+      "fq1": "OBG0117_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0117_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0117_R1.fastq.gz",
+      "fq2_sy": "OBG0117_R2.fastq.gz"
+    },
+
+    "OBG0118":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0118/Unaligned/",
+      "fq1": "OBG0118_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0118_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0118_R1.fastq.gz",
+      "fq2_sy": "OBG0118_R2.fastq.gz"
+    },
+
+    "OBG0120":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0120/Unaligned/",
+      "fq1": "OBG0120_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0120_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0120_R1.fastq.gz",
+      "fq2_sy": "OBG0120_R2.fastq.gz"
+    },
+
+    "OBG0122":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0122/Unaligned/",
+      "fq1": "OBG0122_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0122_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0122_R1.fastq.gz",
+      "fq2_sy": "OBG0122_R2.fastq.gz"
+    },
+
+    "OBG0123":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0123/Unaligned/",
+      "fq1": "OBG0123_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0123_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0123_R1.fastq.gz",
+      "fq2_sy": "OBG0123_R2.fastq.gz"
+    },
+
+    "OBG0126":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0126/Unaligned/",
+      "fq1": "OBG0126_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0126_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0126_R1.fastq.gz",
+      "fq2_sy": "OBG0126_R2.fastq.gz"
+    },
+
+    "OBG0130":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0130/Unaligned/",
+      "fq1": "OBG0130_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0130_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0130_R1.fastq.gz",
+      "fq2_sy": "OBG0130_R2.fastq.gz"
+    },
+
+    "OBG0132":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0132/Unaligned/",
+      "fq1": "OBG0132_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0132_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0132_R1.fastq.gz",
+      "fq2_sy": "OBG0132_R2.fastq.gz"
+    },
+
+    "OBG0133":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0133/Unaligned/",
+      "fq1": "OBG0133_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0133_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0133_R1.fastq.gz",
+      "fq2_sy": "OBG0133_R2.fastq.gz"
+    },
+
+    "OBG0156":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0156/Unaligned/",
+      "fq1": "OBG0156_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0156_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0156_R1.fastq.gz",
+      "fq2_sy": "OBG0156_R2.fastq.gz"
+    },
+
+    "OBG0158":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0158/Unaligned/",
+      "fq1": "OBG0158_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0158_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0158_R1.fastq.gz",
+      "fq2_sy": "OBG0158_R2.fastq.gz"
+    },
+
+    "OBG0170":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0170/Unaligned/",
+      "fq1": "OBG0170_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0170_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0170_R1.fastq.gz",
+      "fq2_sy": "OBG0170_R2.fastq.gz"
+    },
+
+    "OBG0174":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0174/Unaligned/",
+      "fq1": "OBG0174_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0174_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0174_R1.fastq.gz",
+      "fq2_sy": "OBG0174_R2.fastq.gz"
+    },
+
+    "OBG0175":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0175/Unaligned/",
+      "fq1": "OBG0175_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0175_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0175_R1.fastq.gz",
+      "fq2_sy": "OBG0175_R2.fastq.gz"
+    },
+
+    "OBG0178":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0178/Unaligned/",
+      "fq1": "OBG0178_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0178_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0178_R1.fastq.gz",
+      "fq2_sy": "OBG0178_R2.fastq.gz"
+    },
+
+    "YPOPS0006":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/YPOPS0006/Unaligned/",
+      "fq1": "YPOPS0006_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "YPOPS0006_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "YPOPS0006_R1.fastq.gz",
+      "fq2_sy": "YPOPS0006_R2.fastq.gz"
+    },
+
+    "OBG0166":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0166/Unaligned/",
+      "fq1": "OBG0166-006-017_S45_L005_R1_001.fastq.gz",
+      "fq2": "OBG0166-006-017_S45_L005_R2_001.fastq.gz",
+      "fq1_sy": "OBG0166_R1.fastq.gz",
+      "fq2_sy": "OBG0166_R2.fastq.gz"
+    },
+
+    "OBG0053":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0053/Unaligned/",
+      "fq1": "OBG0053_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0053_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0053_R1.fastq.gz",
+      "fq2_sy": "OBG0053_R2.fastq.gz"
+    },
+
+}
