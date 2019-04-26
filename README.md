@@ -7,6 +7,7 @@ Sex differences in human placentas
   - GATK Haplotype single sample genotype calling
   - Processed RNAseq bam file. For each sample, there are 2 placenta samples for 2 different location
 
+##### Per variant
 * Steps:
 1. Run ASEReadcounter:
   - See the snakemake file `exome.snakefile`.
@@ -21,3 +22,11 @@ Sex differences in human placentas
   python compute_bias_directionality.py OBG0044_placenta_1_2_hets.csv OBG0044_placenta_1_2_hets_directionality.csv
   ```
 5. Plot scatter plot of Alteranate allele count / Total count ratio for 2 locations.
+
+##### Per gene
+* Steps:
+1. Use VEP to annotate the gene for each variant (need to set this up on the cluster).
+2. Use `find_num_snps_per_gene.py` to obtain the alternate allele count and total allele count for each gene on the autosomes and chrX. Right now, it's summing up the alternate allele count and total count from all of the variants for that gene. 
+3. Use the Rscript `analyze_ase.R` to merge placenta 1 and placenta 2. 
+4. Use the script `comppute_bias_directionality_gene.py` to find the direction in bias. 
+5. Plot using the Rscript `analyze_ase.R`
