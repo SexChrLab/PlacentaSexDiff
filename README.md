@@ -3,7 +3,7 @@ Sex differences in human placentas
 
 ### Explore heterogeneity in allele specific expression
 
-**Pilot analysis on placenta 1 and placenta 2 from sample OBG0044 
+**Pilot analysis on placenta 1 and placenta 2 from sample OBG0044**
 
 * Exome:
   - GATK Haplotype single sample genotype calling
@@ -11,6 +11,10 @@ Sex differences in human placentas
   - Processed by HISAT
   
 * Both Exome and RNAseq were mapped to the same refrence 
+
+* Steps:
+1. Run GATK ASEReadCounter:
+* Use the snakemake file `asereadcounter.snakefile`.
 
 ##### Per variant
 * Steps:
