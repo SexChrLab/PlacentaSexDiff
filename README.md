@@ -1,11 +1,16 @@
 # PlacentaSexDiff
 Sex differences in human placentas
 
-#### Allele specific expression analysis
-* Data: 
-  - 11 female placentas
+### Explore heterogeneity in allele specific expression
+
+* Pilot analysis on placenta 1 and placenta 2 from sample OBG0044 *
+
+* Exome:
   - GATK Haplotype single sample genotype calling
-  - Processed RNAseq bam file. For each sample, there are 2 placenta samples for 2 different location
+* RNAseq:
+  - Processed by HISAT
+  
+* Both Exome and RNAseq were mapped to the same refrence 
 
 ##### Per variant
 * Steps:
