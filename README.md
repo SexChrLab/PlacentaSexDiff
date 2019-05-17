@@ -39,3 +39,25 @@ Sex differences in human placentas
 3. Use the Rscript `analyze_ase.R` to merge placenta 1 and placenta 2. 
 4. Use the script `comppute_bias_directionality_gene.py` to find the direction in bias. 
 5. Plot using the Rscript `analyze_ase.R`
+
+#### PHASING
+##### Phase on the whole chrX
+* Use the script `phasing.py`. 
+
+```
+python phasing.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgreater20.csv placenta_1_hap_1_ratio.txt placenta_2_hap_1_ratio.txt hap_1
+
+python phasing.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgreater20.csv placenta_1_hap_2_ratio.txt placenta_2_hap_2_ratio.txt hap_2
+```
+
+##### Phase on genes where each gene has at least 2 variants
+* Use the script `phasing_genes_more_than_2_variants.py`.
+* Note: need to change line 57 and 62 for different haplotypes
+
+```
+python phasing_genes_more_than_2_variants.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgr
+eater20.csv OBG0044.gatk.called.raw_vep.vcf TEST_GENE_placenta_1_hap_1.txt TEST_GENE_placenta_2_hap_1.txt"
+
+python phasing_genes_more_than_2_variants.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgr
+eater20.csv OBG0044.gatk.called.raw_vep.vcf TEST_GENE_placenta_1_hap_2.txt TEST_GENE_placenta_2_hap_2.txt"
+```
