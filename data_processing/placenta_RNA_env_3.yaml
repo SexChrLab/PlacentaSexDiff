@@ -1,0 +1,17 @@
+name: placenta_RNA_env3
+channels:
+  - defaults
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.5.1
+  - picard=2.9.2
+  - snakemake=3.11.0
+  - pyyaml=3.11
+  - salmon=0.12.0
+  - bamtools=2.5.1
+  - hisat2=2.1.0
+  - samtools=1.4
+  - fastqc=0.11.8
+  - bbmap=38.22
+  - subread=1.5.2
