@@ -45,9 +45,9 @@ Sex differences in human placentas
 * Use the script `phasing.py`. 
 
 ```
-python phasing.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgreater20.csv placenta_1_hap_1_ratio.txt placenta_2_hap_1_ratio.txt hap_1
+python phasing.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgreater20.csv placenta_1_hap_1_ratio.txt placenta_2_hap_1_ratio.txt
 
-python phasing.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgreater20.csv placenta_1_hap_2_ratio.txt placenta_2_hap_2_ratio.txt hap_2
+python phasing.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgreater20.csv placenta_1_hap_2_ratio.txt placenta_2_hap_2_ratio.txt
 ```
 
 ##### Phase on genes where each gene has at least 2 variants
