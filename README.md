@@ -61,3 +61,22 @@ eater20.csv OBG0044.gatk.called.raw_vep.vcf TEST_GENE_placenta_1_hap_1.txt TEST_
 python phasing_genes_more_than_2_variants.py OBG0044_placenta_1_hets_totalcountgreater20.csv OBG0044_placenta_2_hets_totalcountgr
 eater20.csv OBG0044.gatk.called.raw_vep.vcf TEST_GENE_placenta_1_hap_2.txt TEST_GENE_placenta_2_hap_2.txt"
 ```
+
+## PART A. For variants and genes that show allele specific expression, is the haplotype that are expressed the same in both extraction sites from the same placenta? 
+
+* Data: 12 placenta samples from 12 individuals. Exome on 12 placentas. RNA-seq on 2 extraction sites on each placenta. 
+
+### Whole exome processing
+* Joint call using GATK4 across 12 individuals. 
+  - Subset the VCF file into 2 files: chrA and chrX
+  ```
+  bcftools view batch_1.gatk.called.raw.females.vcf.gz --regions chrX > batch_1.gatk.called.raw.females.chrX.vcf
+  bcftools view batch_1.gatk.called.raw.females.vcf.gz --regions chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chr20,chr21,chr22 > batch_1.gatk.called.raw.females.chrA.vcf
+  ```
+* Filter using VQSR
+* Examine annotations such as DP and MQ on VCF file 
+```
+python ~/softwares/tanya_repos/vcfhelper/extract_stats_from_vcf.py QD FS SOR MQ MQRankSum ReadPosRankSum --vcf batch_1.gatk.called.raw.females.chrA.vcf --outfile ../analysis/post_gatk_call_processing_exome/annotations/chrA_prefiltering_annotations.txt
+
+
+```
