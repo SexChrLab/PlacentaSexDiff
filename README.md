@@ -69,14 +69,23 @@ eater20.csv OBG0044.gatk.called.raw_vep.vcf TEST_GENE_placenta_1_hap_2.txt TEST_
 ### Whole exome processing
 * Joint call using GATK4 across 12 individuals. 
   - Subset the VCF file into 2 files: chrA and chrX
+  
   ```
   bcftools view batch_1.gatk.called.raw.females.vcf.gz --regions chrX > batch_1.gatk.called.raw.females.chrX.vcf
   bcftools view batch_1.gatk.called.raw.females.vcf.gz --regions chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chr20,chr21,chr22 > batch_1.gatk.called.raw.females.chrA.vcf
   ```
+  
 * Filter using VQSR
+* After filteirng using VQSR, filter for biallelic variants only. Then, subset for each individual. After this step, there would be variants that are homozygous reference or homozygous alternate here. Therefore, run a GATK command to obtain the heterozygous sites. 
+
 * Examine annotations such as DP and MQ on VCF file 
 ```
 python ~/softwares/tanya_repos/vcfhelper/extract_stats_from_vcf.py QD FS SOR MQ MQRankSum ReadPosRankSum --vcf batch_1.gatk.called.raw.females.chrA.vcf --outfile ../analysis/post_gatk_call_processing_exome/annotations/chrA_prefiltering_annotations.txt
-
-
 ```
+
+### Run GATK ASEReadCounter
+* RNA-seq bam files are from HISAT
+* Variant files are after the GATK step of joint calling.
+**NOTES: I tried running GATK ASEReadCounter using the variant files after filtering for biallelic sites, subset per individual, and filtering for hets sites. However, the command kept failing, saying that the contigs for the bam files and the refenrece do not match. However, using the variants files before these processing steps work.**
+
+### Filter results from GATK ASEReadCounter for hets
