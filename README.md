@@ -89,3 +89,6 @@ python ~/softwares/tanya_repos/vcfhelper/extract_stats_from_vcf.py QD FS SOR MQ 
 **NOTES: I tried running GATK ASEReadCounter using the variant files after filtering for biallelic sites, subset per individual, and filtering for hets sites. However, the command kept failing, saying that the contigs for the bam files and the refenrece do not match. However, using the variants files before these processing steps work.**
 
 ### Filter results from GATK ASEReadCounter for hets
+
+## PART B. Are the same genes always inactivated? 
+* For each gene, 
