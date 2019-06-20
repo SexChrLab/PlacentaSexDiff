@@ -66,6 +66,9 @@ eater20.csv OBG0044.gatk.called.raw_vep.vcf TEST_GENE_placenta_1_hap_2.txt TEST_
 
 * Data: 12 placenta samples from 12 individuals. Exome on 12 placentas. RNA-seq on 2 extraction sites on each placenta. 
 
+## PART B. Are the same genes (with the same alleles) having the same expression pattern across all 24 placentas? 
+
+
 ### Whole exome processing
 * Joint call using GATK4 across 12 individuals. 
   - Subset the VCF file into 2 files: chrA and chrX
