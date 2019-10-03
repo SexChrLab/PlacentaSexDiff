@@ -1,1 +1,472 @@
+{   "XX_ref_fa" : "/data/storage/SAYRES/REFERENCE_GENOMES/GENCODE/GRCh38.p12.genome.XXonly/GRCh38.p12.genome.XXonly.fa",
+    "XX_ref_fai" : "/data/storage/SAYRES/REFERENCE_GENOMES/GENCODE/GRCh38.p12.genome.XXonly/GRCh38.p12.genome.XXonly.fa.fai",
+    "XY_ref_fa" : "/data/storage/SAYRES/REFERENCE_GENOMES/GENCODE/GRCh38.p12.genome.XY/GRCh38.p12.genome.XY.fa",
+    "XY_ref_fai" : "/data/storage/SAYRES/REFERENCE_GENOMES/GENCODE/GRCh38.p12.genome.XY/GRCh38.p12.genome.XY.fa.fai",
+    "sample_names" : [
+      "OBG0044", "OBG0068", "OBG0111", "OBG0112", "OBG0115", "OBG0116", "OBG0117",
+      "OBG0118", "OBG0120", "OBG0122", "OBG0123", "OBG0126", "OBG0130", "OBG0132",
+      "OBG0133", "OBG0156", "OBG0158", "OBG0170", "OBG0174", "OBG0175", "OBG0178",
+      "YPOPS0006", "OBG0166", "OBG0053"
+    ],
 
+    "males" : [
+      "OBG0112", "OBG0116", "OBG0117", "OBG0118", "OBG0122", "OBG0123", "OBG0126",
+      "OBG0130", "OBG0132", "OBG0158", "YPOPS0006", "OBG0053"
+    ],
+
+    "females" : [
+      "OBG0044", "OBG0068", "OBG0111", "OBG0115", "OBG0120", "OBG0133", "OBG0156",
+      "OBG0170", "OBG0174", "OBG0175", "OBG0178", "OBG0166"
+    ],
+
+    "females_test" : [
+      "OBG0044"
+    ],
+
+    "females_vcf" : [
+      "OBG0044_whole_exome", "OBG0068_whole_exome", "OBG0111_whole_exome", "OBG0115_whole_exome", "OBG0120_whole_exome", "OBG0133_whole_exome", "OBG0156_whole_exome",
+      "OBG0170_whole_exome", "OBG0174_whole_exome", "OBG0175_whole_exome", "OBG0178_whole_exome", "OBG0166_whole_exome"
+    ],
+
+    "males_vcf" : [
+      "OBG0112_whole_exome", "OBG0116_whole_exome", "OBG0117_whole_exome", "OBG0118_whole_exome", "OBG0122_whole_exome", "OBG0123_whole_exome", "OBG0126_whole_exome",
+      "OBG0130_whole_exome", "OBG0132_whole_exome", "OBG0158_whole_exome", "YPOPS0006_whole_exome", "OBG0053_whole_exome"
+    ],
+
+    "females_placenta" : [
+      "OBG0044", "OBG0111", "OBG0115", "OBG0120", "OBG0133", "OBG0156",
+      "OBG0170", "OBG0174", "OBG0175", "OBG0178", "OBG0166"
+    ],
+
+    "OBG0044":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0044/Unaligned/",
+      "fq1": "OBG0044_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0044_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0044_R1.fastq.gz",
+      "fq2_sy": "OBG0044_R2.fastq.gz",
+      "ID": "OBG0044",
+      "SM": "OBG0044_whole_exome",
+      "LB": "OBG0044_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0044-1-010_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0044-2-011_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0044-1-010_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0044-2-011_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam.bai",
+      "placenta_1": "OBG0044-1_010",
+      "placenta_2": "OBG0044-2_011"
+    },
+
+    "OBG0068":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0068/Unaligned/",
+      "fq1": "OBG0068_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0068_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0068_R1.fastq.gz",
+      "fq2_sy": "OBG0068_R2.fastq.gz",
+      "ID": "OBG0068",
+      "SM": "OBG0068_whole_exome",
+      "LB": "OBG0068_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0068-1-020_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0068-2-021_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam"
+    },
+
+    "OBG0111":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0111/Unaligned/",
+      "fq1": "OBG0111_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0111_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0111_R1.fastq.gz",
+      "fq2_sy": "OBG0111_R2.fastq.gz",
+      "ID": "OBG0111",
+      "SM": "OBG0111_whole_exome",
+      "LB": "OBG0111_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0111-1-010_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0111-2-011_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0111-1_010",
+      "placenta_2": "OBG0111-2_011"
+    },
+
+    "OBG0112":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0112/Unaligned/",
+      "fq1": "OBG0112_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0112_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0112_R1.fastq.gz",
+      "fq2_sy": "OBG0112_R2.fastq.gz",
+      "ID": "OBG0112",
+      "SM": "OBG0112_whole_exome",
+      "LB": "OBG0112_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0112-1-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0112-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0112-1-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0112-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0112-1-009",
+      "placenta_2": "OBG0112-2-009"
+    },
+
+    "OBG0115":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0115/Unaligned/",
+      "fq1": "OBG0115_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0115_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0115_R1.fastq.gz",
+      "fq2_sy": "OBG0115_R2.fastq.gz",
+      "ID": "OBG0115",
+      "SM": "OBG0115_whole_exome",
+      "LB": "OBG0115_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0115-1-010_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0115-2-011_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0115-1_010",
+      "placenta_2": "OBG0115-2_011"
+    },
+
+    "OBG0116":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0116/Unaligned/",
+      "fq1": "OBG0116_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0116_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0116_R1.fastq.gz",
+      "fq2_sy": "OBG0116_R2.fastq.gz",
+      "ID": "OBG0116",
+      "SM": "OBG0116_whole_exome",
+      "LB": "OBG0116_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0116-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0116-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0116-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0116-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0116-1-008",
+      "placenta_2": "OBG0116-2-009"
+    },
+
+    "OBG0117":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0117/Unaligned/",
+      "fq1": "OBG0117_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0117_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0117_R1.fastq.gz",
+      "fq2_sy": "OBG0117_R2.fastq.gz",
+      "ID": "OBG0117",
+      "SM": "OBG0117_whole_exome",
+      "LB": "OBG0117_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0117-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0117-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0117-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0117-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0117-1-008",
+      "placenta_2": "OBG0117-2-009"
+    },
+
+    "OBG0118":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0118/Unaligned/",
+      "fq1": "OBG0118_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0118_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0118_R1.fastq.gz",
+      "fq2_sy": "OBG0118_R2.fastq.gz",
+      "ID": "OBG0118",
+      "SM": "OBG0118_whole_exome",
+      "LB": "OBG0118_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0118-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0118-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0118-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0118-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0118-1-008",
+      "placenta_2": "OBG0118-2-009"
+    },
+
+    "OBG0120":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0120/Unaligned/",
+      "fq1": "OBG0120_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0120_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0120_R1.fastq.gz",
+      "fq2_sy": "OBG0120_R2.fastq.gz",
+      "ID": "OBG0120",
+      "SM": "OBG0120_whole_exome",
+      "LB": "OBG0120_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0120-1-010_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0120-2-011_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0120-1_010",
+      "placenta_2": "OBG0120-2_011"
+    },
+
+    "OBG0122":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0122/Unaligned/",
+      "fq1": "OBG0122_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0122_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0122_R1.fastq.gz",
+      "fq2_sy": "OBG0122_R2.fastq.gz",
+      "ID": "OBG0122",
+      "SM": "OBG0122_whole_exome",
+      "LB": "OBG0122_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0122-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0122-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0122-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0122-2-009_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0122-1-008",
+      "placenta_2": "OBG0122-2-009"
+    },
+
+    "OBG0123":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0123/Unaligned/",
+      "fq1": "OBG0123_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0123_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0123_R1.fastq.gz",
+      "fq2_sy": "OBG0123_R2.fastq.gz",
+      "ID": "OBG0123",
+      "SM": "OBG0123_whole_exome",
+      "LB": "OBG0123_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0123-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0123-2-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0123-1-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0123-2-008_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0123-1-008",
+      "placenta_2": "OBG0123-2-008"
+    },
+
+    "OBG0126":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0126/Unaligned/",
+      "fq1": "OBG0126_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0126_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0126_R1.fastq.gz",
+      "fq2_sy": "OBG0126_R2.fastq.gz",
+      "ID": "OBG0126",
+      "SM": "OBG0126_whole_exome",
+      "LB": "OBG0126_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0126-1-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0126-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0126-1-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0126-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0126-1-003",
+      "placenta_2": "OBG0126-2-003"
+    },
+
+    "OBG0130":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0130/Unaligned/",
+      "fq1": "OBG0130_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0130_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0130_R1.fastq.gz",
+      "fq2_sy": "OBG0130_R2.fastq.gz",
+      "ID": "OBG0130",
+      "SM": "OBG0130_whole_exome",
+      "LB": "OBG0130_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0130-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0130-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0130-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0130-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0130-1-001",
+      "placenta_2": "OBG0130-2-003"
+    },
+
+    "OBG0132":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0132/Unaligned/",
+      "fq1": "OBG0132_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0132_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0132_R1.fastq.gz",
+      "fq2_sy": "OBG0132_R2.fastq.gz",
+      "ID": "OBG0132",
+      "SM": "OBG0132_whole_exome",
+      "LB": "OBG0132_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0132-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0132-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0132-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0132-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0132-1-001",
+      "placenta_2": "OBG0132-2-003"
+    },
+
+    "OBG0133":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0133/Unaligned/",
+      "fq1": "OBG0133_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0133_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0133_R1.fastq.gz",
+      "fq2_sy": "OBG0133_R2.fastq.gz",
+      "ID": "OBG0133",
+      "SM": "OBG0133_whole_exome",
+      "LB": "OBG0133_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0133-1-020_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0133-2-021_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0133-1_020",
+      "placenta_2": "OBG0133-2_021"
+    },
+
+    "OBG0156":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0156/Unaligned/",
+      "fq1": "OBG0156_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0156_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0156_R1.fastq.gz",
+      "fq2_sy": "OBG0156_R2.fastq.gz",
+      "ID": "OBG0156",
+      "SM": "OBG0156_whole_exome",
+      "LB": "OBG0156_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0156-1-010_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0156-2-021_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0156-1_010",
+      "placenta_2": "OBG0156-2_021"
+    },
+
+    "OBG0158":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0158/Unaligned/",
+      "fq1": "OBG0158_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0158_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0158_R1.fastq.gz",
+      "fq2_sy": "OBG0158_R2.fastq.gz",
+      "ID": "OBG0158",
+      "SM": "OBG0158_whole_exome",
+      "LB": "OBG0158_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0158-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0158-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0158-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0158-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0158-1-001",
+      "placenta_2": "OBG0158-2-003"
+    },
+
+    "OBG0170":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0170/Unaligned/",
+      "fq1": "OBG0170_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0170_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0170_R1.fastq.gz",
+      "fq2_sy": "OBG0170_R2.fastq.gz",
+      "ID": "OBG0170",
+      "SM": "OBG0170_whole_exome",
+      "LB": "OBG0170_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0170-1-020_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0170-2-021_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0170-1_020",
+      "placenta_2": "OBG0170-2_021"
+    },
+
+    "OBG0174":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0174/Unaligned/",
+      "fq1": "OBG0174_AHJC3YBBXX_L007_R1_001.fastq.gz",
+      "fq2": "OBG0174_AHJC3YBBXX_L007_R2_001.fastq.gz",
+      "fq1_sy": "OBG0174_R1.fastq.gz",
+      "fq2_sy": "OBG0174_R2.fastq.gz",
+      "ID": "OBG0174",
+      "SM": "OBG0174_whole_exome",
+      "LB": "OBG0174_whole_exome",
+      "PU": "HJC3YBBXX.7",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0174-1-020_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0174-2-011_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0174-1_020",
+      "placenta_2": "OBG0174-2_011"
+    },
+
+    "OBG0175":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0175/Unaligned/",
+      "fq1": "OBG0175_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0175_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0175_R1.fastq.gz",
+      "fq2_sy": "OBG0175_R2.fastq.gz",
+      "ID": "OBG0175",
+      "SM": "OBG0175_whole_exome",
+      "LB": "OBG0175_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0175-1-020_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0175-2-021_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0175-1_020",
+      "placenta_2": "OBG0175-2_021"
+    },
+
+    "OBG0178":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0178/Unaligned/",
+      "fq1": "OBG0178_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0178_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0178_R1.fastq.gz",
+      "fq2_sy": "OBG0178_R2.fastq.gz",
+      "ID": "OBG0178",
+      "SM": "OBG0178_whole_exome",
+      "LB": "OBG0178_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0178-1-020_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0178-2-021_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0178-1_020",
+      "placenta_2": "OBG0178-2_021"
+    },
+
+    "YPOPS0006":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/YPOPS0006/Unaligned/",
+      "fq1": "YPOPS0006_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "YPOPS0006_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "YPOPS0006_R1.fastq.gz",
+      "fq2_sy": "YPOPS0006_R2.fastq.gz",
+      "ID": "YPOPS0006",
+      "SM": "YPOPS0006_whole_exome",
+      "LB": "YPOPS0006_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/YPOPS0006-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/YPOPS0006-2-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/YPOPS0006-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/YPOPS0006-2-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "YPOPS0006-1-001",
+      "placenta_2": "YPOPS0006-2-001"
+    },
+
+    "OBG0166":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0166/Unaligned/",
+      "fq1": "OBG0166-006-017_S45_L005_R1_001.fastq.gz",
+      "fq2": "OBG0166-006-017_S45_L005_R2_001.fastq.gz",
+      "fq1_sy": "OBG0166_R1.fastq.gz",
+      "fq2_sy": "OBG0166_R2.fastq.gz",
+      "ID": "OBG0166",
+      "SM": "OBG0166_whole_exome",
+      "LB": "OBG0166_whole_exome",
+      "PU": "HJCHJBBXX.5",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0166-1-010_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/OBG0166-2-011_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+      "placenta_1": "OBG0166-1_010",
+      "placenta_2": "OBG0166-2_011"
+    },
+
+    "OBG0053":{
+      "fq_path": "/data/storage/SAYRES/placenta_YPOPS/01_data/exome/sysg1.cs.yale.edu:3010/733CqRfEeVIAySP0qWG1x0933C3e9/Sayres_RQ5985-3-31-2017/OBG0053/Unaligned/",
+      "fq1": "OBG0053_AHJC3YBBXX_L006_R1_001.fastq.gz",
+      "fq2": "OBG0053_AHJC3YBBXX_L006_R2_001.fastq.gz",
+      "fq1_sy": "OBG0053_R1.fastq.gz",
+      "fq2_sy": "OBG0053_R2.fastq.gz",
+      "ID": "OBG0053",
+      "SM": "OBG0053_whole_exome",
+      "LB": "OBG0053_whole_exome",
+      "PU": "HJC3YBBXX.6",
+      "PL": "Illumina",
+      "placenta_1_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0053-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_2_bam_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0053-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+      "placenta_1_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0053-1-001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_2_bai_path": "/data/storage/SAYRES/placenta_YPOPS/06_HISAT_RNA/Aligned_BAMS/stranded_RF/OBG0053-2-003_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam.bai",
+      "placenta_1": "OBG0053-1-001",
+      "placenta_2": "OBG0053-2-003"
+    }
+}
