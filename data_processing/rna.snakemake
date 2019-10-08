@@ -1,0 +1,141 @@
+import os
+
+configfile: "placentaDecidua_mappedSTATS_config.json"
+
+# Tool paths:
+fastqc_path = "fastqc"
+multiqc_path = "multiqc"
+bwa_path = "bwa"
+samtools_path = "samtools"
+bbduksh_path = "bbduk.sh"
+hisat_path = "hisat2"
+bamtools_path = "bamtools"
+picard_path = "picard"
+featureCounts_path = "featureCounts"
+
+#
+REF_TYPE = ["Ref_GRCh38","Ref_GRCh38_Y_HardMasked","Ref_GRCh38_Y_PARsMasked"]
+REF_TYPE_HISAT = ["Ref_GRCh38_Y_HardMasked_HISAT_index","Ref_GRCh38_Y_PARsMasked_HISAT_index"]
+
+# Directory
+fastq_directory = "fastq_files/"
+
+rule all:
+    input:
+        expand(config["Output_File_Directory"]+"{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_WT_DEC.txt", decidua_sample = config["deciduas"]),
+        expand(config["Output_File_Directory"]+"{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_WT_XY.txt", male_sample = config["males"]),
+        expand(config["Output_File_Directory"]+"{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_WT_XX.txt", female_sample = config["females"]),
+        
+        expand(config["Output_File_Directory"]+"{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_DEC.bam", decidua_sample = config["deciduas"]),
+        expand(config["Output_File_Directory"]+"{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_XY.bam", male_sample = config["males"]),
+        expand(config["Output_File_Directory"]+"{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_XX.bam", female_sample = config["females"]),
+
+        expand(config["Output_File_Directory"]+"{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_chrX_DEC.txt", decidua_sample = config["deciduas"]),
+        expand(config["Output_File_Directory"]+"{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_chrX_XY.txt", male_sample = config["males"]),
+        expand(config["Output_File_Directory"]+"{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_chrX_XX.txt", female_sample = config["females"])
+    
+    input:
+        expand("Aligned_BAMS/{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam", male_sample = config["males"]),
+        expand("Aligned_BAMS/{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_DEC.bam", decidua_sample = config["deciduas"]),
+        expand("Aligned_BAMS/{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam", female_sample = config["females"]),
+
+rule stats_bam_males:
+    input:
+        BAM = "Aligned_BAMS/{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam"
+    output:
+        stats = (config["Output_File_Directory"]+"{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_WT_XY.txt")
+    params:
+        bamtools = bamtools_path
+    shell:
+        "{params.bamtools} stats -in {input.BAM} > {output.stats}"
+
+rule stats_bam_females:
+    input:
+        BAM = "Aligned_BAMS/{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam"
+    output:
+        stats = (config["Output_File_Directory"]+"{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_WT_XX.txt")
+    params:
+        bamtools = bamtools_path
+    shell:
+        "{params.bamtools} stats -in {input.BAM} > {output.stats}"
+ 
+rule stats_bam_deciduas:
+    input:
+        BAM = "Aligned_BAMS/{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_DEC.bam"
+    output:
+        stats = (config["Output_File_Directory"]+"{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_WT_DEC.txt")
+    params:
+        bamtools = bamtools_path
+    shell:
+        "{params.bamtools} stats -in {input.BAM} > {output.stats}"
+ 
+#------------------------------------------------ 
+#  samtools view chr X  
+#------------------------------------------------ 
+
+rule samtools_chrX_bam_males:
+    input:
+        BAM = "Aligned_BAMS/{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam"
+    output:
+        BAM_chrX = (config["Output_File_Directory"]+"{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_XY.bam")
+    params:
+        samtools = samtools_path
+    shell:
+        "{params.samtools} view -b {input.BAM} chrX > {output.BAM_chrX}"
+
+rule samtools_chrX_bam_females:
+    input:
+        BAM = "Aligned_BAMS/{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam"
+    output:
+        BAM_chrX = (config["Output_File_Directory"]+"{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_XX.bam")
+    params:
+        samtools = samtools_path
+    shell:
+        "{params.samtools} view -b {input.BAM} chrX > {output.BAM_chrX}"
+ 
+rule samtools_chrX_bam_deciduas:
+    input:
+        BAM = "Aligned_BAMS/{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_DEC.bam"
+    output:
+        BAM_chrX = (config["Output_File_Directory"]+"{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_DEC.bam")
+    params:
+        samtools = samtools_path
+    shell:
+        "{params.samtools} view -b {input.BAM} chrX > {output.BAM_chrX}"
+
+
+#------------------------------------------------ 
+#  chr X bamstats 
+#------------------------------------------------ 
+
+rule stats_chrX_bam_males:
+    input:
+        BAM = (config["Output_File_Directory"]+"{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_XY.bam")
+    output:
+        stats = (config["Output_File_Directory"]+"{male_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_chrX_XY.txt")
+    params:
+        bamtools = bamtools_path
+    shell:
+        "{params.bamtools} stats -in {input.BAM} > {output.stats}"
+
+rule stats_chrX_bam_females:
+    input:
+        BAM = (config["Output_File_Directory"]+"{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_XX.bam")
+    output:
+        stats = (config["Output_File_Directory"]+"{female_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_chrX_XX.txt")
+    params:
+        bamtools = bamtools_path
+    shell:
+        "{params.bamtools} stats -in {input.BAM} > {output.stats}"
+ 
+rule stats_chrX_bam_deciduas:
+    input:
+        BAM = (config["Output_File_Directory"]+"{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_chrX_DEC.bam")
+    output:
+        stats = (config["Output_File_Directory"]+"{decidua_sample}_HISAT_pair_trim_sort_mkdup_rdgrp_stats_chrX_DEC.txt")
+    params:
+        bamtools = bamtools_path
+    shell:
+        "{params.bamtools} stats -in {input.BAM} > {output.stats}"
+
+
